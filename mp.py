@@ -5,7 +5,7 @@ import os
 
 start = time.time()
 Firstprocess = ()
-Secongprocess = ()
+Secondprocess = ()
 Thirdprocess = ()
 
 print(datetime.datetime.now())
@@ -14,7 +14,7 @@ if __name__=="__main__":
     
     
     p1 = multiprocessing.Process(target=Firstprocess)
-    p2 = multiprocessing.Process(target=Secongprocess)
+    p2 = multiprocessing.Process(target=Secondprocess)
     p3 = multiprocessing.Process(target=Thirdprocess)
 
     p1.start()
